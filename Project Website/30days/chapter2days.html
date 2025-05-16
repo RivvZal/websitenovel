@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - 30 Days With You</title>
+	<link rel="stylesheet" href="/css/novel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/home.html">
+                <img src="/assets/logo.png" alt="Logo" style="height: 48px;"/>
+                <span>Klenniel</span>
+            </a>
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a class="button" href="/home.html">Novel</a></li>
+                    <li><a class="button" href="/home.html">Manga</a></li>
+                    <li><a class="button" href="/store/store.html">Store</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<main>
+		<section id="mangaweb">
+            <div class="container my-4">
+                <h2 class="mb-3">Chapter 2</h2>
+              
+                <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                  <!-- Chapter -->
+                  <div class="custom-dropdown">
+                    <button class="custom-dropdown-toggle">Pilih Chapter</button>
+                    <ul class="custom-dropdown-menu">
+                      <li><a href="/30days/chapter1days.html">Chapter 1</a></li>
+                      <li><a href="/30days/chapter2days.html">Chapter 2</a></li>
+                    </ul>
+                  </div>
+              
+                  <!-- Back to Menu -->
+                  <a href="/30days.html" class="btn btn-outline-light">Back to Menu</a> <!-- GANTI LINK DISINI -->
+                </div>
+              
+                <!-- Novel -->
+                <div class="teks d-flex flex-column gap-3">
+                    <p><b>Chapter 2: Library Echoes</b><br><br>
+
+                        After that day, I began noticing her. Maybe she was always there, or maybe life had finally decided to give me something worth holding onto.<br>
+                        
+                        She always sat by the window in the library during lunch, her notebook open, sometimes sketching, sometimes scribbling poetry in a language I could never fully decipher from afar.<br>
+                        
+                        I started going to the library too. At first, I told myself it was just for the peace and quiet. But the truth was simple: I wanted to see her again.<br>
+                        
+                        We exchanged glances. Small smiles. And then, finally, words.<br><br>
+                        
+                        "The Fault in Our Stars?" she asked one day, tilting her head.<br><br>
+                        
+                        I looked down at the book in my hands. “Yeah.”<br><br>
+                        
+                        “I’ve read it three times. It hurts. But it’s honest.”<br><br>
+                        
+                        I nodded slowly. “I like it because it doesn’t lie. It tells you straight up—some stories just aren’t meant to end happily.”<br><br>
+                        
+                        She looked at me, and for a second, her expression softened into something fragile.<br><br>
+                        
+                        “Real stories rarely do,” she whispered.<br><br>
+                        That was the beginning of our daily meetings. We never planned them, but somehow, we always ended up in the same corner of the library. She would draw while I read. Sometimes we’d talk, sometimes not. But it never felt awkward. It just felt right.
+                        <br>
+                        She showed me her sketches once. They were beautiful. Melancholic. Lonely.<br><br>
+                        
+                        “Why don’t you draw faces?” I asked.<br><br>
+                        
+                        “I don’t know what they look like,” she answered. “Not really. But I know how they feel.”<br><br>
+                        
+                        Every day I was with her, I forgot about the clock ticking inside me. I forgot that my life had an expiration date. All I could think about was her—and how being around her made me feel alive.
+                        
+                        </p>
+                </div>
+                <div class="d-flex flex-wrap align-items-center gap-3 mt-4" style="justify-content: right;">
+                    <a href="/30days/chapter1days.html" class="btn btn-outline-light">Previous Chapter</a>  
+                    <a href="/30days/chapter2days.html" class="btn btn-outline-light">Next Chapter</a> <!-- GANTI LINK DISINI -->
+                  </div>
+              </div>
+              
+        </section>
+	</main>
+
+	<footer id="footer">
+		<div class="text-center py-3">
+			&copy; 2025 by Rifqi Rizaldi
+		</div>
+	</footer>  
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-WvpXIG8ZC3H9ExzPGof7NV3L9vD7N43w3A6kP0VtGR2dUXb9ZSh2NPryK6sWrCFAH+WhgEvEJKZ2eImtd+LZ6Q==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const dropdown = document.querySelector('.custom-dropdown');
+              const toggle = dropdown.querySelector('.custom-dropdown-toggle');
+          
+              toggle.addEventListener('click', () => {
+                dropdown.classList.toggle('show');
+              });
+          
+              window.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                  dropdown.classList.remove('show');
+                }
+              });
+            });
+          </script>
+</body>
+</html>

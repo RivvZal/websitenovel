@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="assets/logo.png" alt="Logo" style="height: 48px;"/>
+                <span>Klenniel</span>
+            </a>
+        </div>
+        <nav>
+          
+        </nav>
+    </header>
+
+    <main style="display: flex; justify-content: center; align-items: center;">
+       <div>
+        <button class="button" style="border-radius: 5px;"><a href="home.html" style="text-decoration: none; color: white;">Klik Disini</a></button>
+       </div>
+    </main>
+
+    <footer id="footer">
+      <div class="text-center py-3">
+          &copy; 2025 by Rifqi Rizaldi
+      </div>
+    </footer>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-WvpXIG8ZC3H9ExzPGof7NV3L9vD7N43w3A6kP0VtGR2dUXb9ZSh2NPryK6sWrCFAH+WhgEvEJKZ2eImtd+LZ6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+      document.getElementById("to-novel").addEventListener("click", function(e) {
+        e.preventDefault();
+        document.getElementById("indexmanga").scrollIntoView({ behavior: "smooth" });
+      });
+    
+      document.getElementById("to-manga").addEventListener("click", function(e) {
+        e.preventDefault();
+        document.getElementById("indexnovel").scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+    
+</body>
+</html>

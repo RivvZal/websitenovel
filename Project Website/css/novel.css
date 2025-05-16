@@ -1,0 +1,237 @@
+/* General Styles */
+main {
+    background-color: #333;
+    color: whitesmoke;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 2px solid #000000;
+    background-color: #2c2c2c;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.logo {
+    margin: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+    line-height: 34px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+#footer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: whitesmoke;
+    border-top: 2px solid #000000;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+}
+
+footer .text-center {
+    padding: 10px 0;
+}
+
+.teks {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown-toggle {
+    background-color: #212529; 
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #343a40;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.custom-dropdown-toggle:after {
+    content: " ▼";
+    font-size: 0.7em;
+}
+
+.custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.375rem;
+    padding: 0.5rem 0;
+    margin-top: 5px;
+    min-width: 160px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    z-index: 1050;
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-dropdown-menu li a {
+    display: block;
+    padding: 0.375rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.custom-dropdown-menu li a:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.custom-dropdown.show .custom-dropdown-menu {
+    display: block;
+}
+
+/* Mobile Responsiveness */
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0; 
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .manga-img {
+        max-width: 100%;
+    }
+
+    .teks {
+        padding: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-dropdown-toggle {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%; 
+        padding: 12px 0; 
+        text-align: center;
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .logo span {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px; 
+    }
+
+    #footer {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .teks {
+        font-size: 14px;
+    }
+
+    .manga-img {
+        max-width: 100%;
+    }
+
+    .custom-dropdown-toggle {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+

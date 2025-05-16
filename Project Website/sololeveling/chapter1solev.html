@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - Solo Leveling</title>
+	<link rel="stylesheet" href="/css/manga.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/home.html">
+                <img src="/assets/logo.png" alt="Logo" style="height: 48px;"/>
+                <span>Klenniel</span>
+            </a>
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a class="button" href="/home.html">Novel</a></li>
+                    <li><a class="button" href="/home.html">Manga</a></li>
+                    <li><a class="button" href="/store/store.html">Store</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+	<main>
+		<section id="mangaweb">
+            <div class="container my-4">
+                <h2 class="mb-3">Chapter 1</h2>
+              
+                <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                  <!-- Chapter -->
+                  <div class="custom-dropdown">
+                    <button class="custom-dropdown-toggle">Pilih Chapter</button>
+                    <ul class="custom-dropdown-menu">
+                      <li><a href="/sololeveling/chapter1solev.html">Chapter 1</a></li>
+                    </ul>
+                  </div>
+                  
+              
+                  <!-- Back to Menu -->
+                  <a href="/sololeveling.html" class="btn btn-outline-light">Back to Menu</a> <!-- GANTI LINK DISINI -->
+                </div>
+              
+                <!-- Manga Image Panel -->
+                <div class="manga-panel d-flex flex-column gap-3">
+                    <img src="/sololevelingpanel/panel.jpg" alt="Manga Page 1" class="manga-img">
+                  <img src="/sololevelingpanel/solevmanga1.jpg" alt="Manga Page 2" class="manga-img">
+                  <img src="/sololevelingpanel/02d45059-71bb-4f71-984d-da1ec66f5f5d.jpg" alt="Manga Page 3" class="manga-img">
+                </div>
+              </div>
+              
+        </section>
+	</main>
+
+	<footer id="footer">
+		<div class="text-center py-3">
+			&copy; 2025 by Rifqi Rizaldi
+		</div>
+	</footer>  
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-WvpXIG8ZC3H9ExzPGof7NV3L9vD7N43w3A6kP0VtGR2dUXb9ZSh2NPryK6sWrCFAH+WhgEvEJKZ2eImtd+LZ6Q==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const dropdown = document.querySelector('.custom-dropdown');
+        const toggle = dropdown.querySelector('.custom-dropdown-toggle');
+    
+        toggle.addEventListener('click', () => {
+          dropdown.classList.toggle('show');
+        });
+    
+        window.addEventListener('click', (e) => {
+          if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('show');
+          }
+        });
+      });
+    </script>
+    
+</body>
+</html>
