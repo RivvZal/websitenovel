@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chikawa</title>
+    <link rel="stylesheet" href="/css/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/home.html">
+                <img src="/assets/logo.png" alt="Logo" style="height: 48px;"/>
+                <span>Klenniel</span>
+            </a>
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a class="button" href="/store/store.html">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="itemsinfo">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/chikawa.jpg" alt="Produk Kucing" class="img-fluid">
+                </div>
+                <div class="product-details">
+                    <h2 class="product-title">MINISO Boneka Chikawa</h2>
+                    <p class="product-description">Boneka lembut berbentuk kucing bewarna putih, cocok untuk hadiah anak-anak.</p>
+                    <div class="product-rating">
+                        <span>⭐ 4.9 (7.6RB Penilaian)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">Rp79.000</span>
+                        <span class="original-price">Rp99.900</span>
+                    </div>
+                    <div class="product-specs">
+                        <h4>Spesifikasi Produk:</h4>
+                        <ul>
+                            <li>Material: Plush Lembut Premium</li>
+                            <li>Ukuran: 25cm x 20cm</li>
+                            <li>Warna: Putih & Pink</li>
+                            <li>Isi: Kapas Sintetis</li>
+                            <li>Cocok untuk hadiah ulang tahun anak-anak</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <button class="button">Masukkan Keranjang</button>
+                        <button class="button buy-now">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+    <footer id="footer">
+      <div class="text-center py-3">
+          &copy; 2025 by Rifqi Rizaldi
+      </div>
+    </footer>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-WvpXIG8ZC3H9ExzPGof7NV3L9vD7N43w3A6kP0VtGR2dUXb9ZSh2NPryK6sWrCFAH+WhgEvEJKZ2eImtd+LZ6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+      document.getElementById("to-novel").addEventListener("click", function(e) {
+        e.preventDefault();
+        document.getElementById("indexmanga").scrollIntoView({ behavior: "smooth" });
+      });
+    
+      document.getElementById("to-manga").addEventListener("click", function(e) {
+        e.preventDefault();
+        document.getElementById("indexnovel").scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+    
+</body>
+</html>
